@@ -28,6 +28,7 @@ export default {
       },
       fontFamily: {
         display: ['"Fraunces"', 'ui-serif', 'Georgia', 'serif'],
+        mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
         sans: ['"Inter"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       maxWidth: {

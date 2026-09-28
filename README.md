@@ -1,34 +1,8 @@
-# Mahir Foysal — Portfolio
+# Mahir Foysal, AI Engineer Portfolio
 
-A React + Vite + Tailwind portfolio for a Canva / social media visual designer.
+React + Vite + Tailwind. Run: `npm install && npm run dev`. Build: `npm run build` (deploy `dist/` on Vercel or Netlify).
 
-## Setup
-
-```bash
-npm install
-npm run dev
-```
-
-Then open the printed local URL (usually `http://localhost:5173`).
-
-To build for production and deploy (Netlify, Vercel, GitHub Pages, etc.):
-
-```bash
-npm run build
-```
-
-The output goes to `dist/`.
-
-## Replacing placeholder content
-
-- **Your portrait**: replace `src/assets/profile.png` with your own photo (same filename, or update the import in `Hero.jsx` and `About.jsx`).
-- **Project covers**: replace the files in `src/assets/projects/` with your own designs, keeping the same filenames, or update the imports in `src/data/projects.js`.
-- **Project details**: edit `src/data/projects.js` — title, category, description, and every case-study field (objective, palette, process, etc.).
-- **Contact info**: open `src/components/Contact.jsx` and `src/components/Footer.jsx` and replace the placeholder email and social links (LinkedIn, Behance, Fiverr, Instagram) with your real profile URLs.
-- **Testimonials**: once you have real client feedback, replace the placeholder message in `src/components/Testimonials.jsx` with actual quotes (always with real names/permission).
-
-## Notes
-
-- All placeholder images were generated locally — no third-party or copyrighted imagery was used.
-- No fake clients, stats, testimonials or years of experience are included anywhere in the copy; update these sections truthfully as your portfolio grows.
-- Respects `prefers-reduced-motion` and includes visible keyboard focus states throughout.
+## Before you apply for jobs (important)
+1. `src/data/profile.js`: put your real email, GitHub, LinkedIn, CV.
+2. `src/data/projects.js`: the 4 projects are TEMPLATES. Replace them with projects you really built, and add GitHub and live demo links. Recruiters open the code, so a real repo with a good README matters most.
+3. Keep only claims that are true. Add real numbers (latency, accuracy, users) only when you have them.

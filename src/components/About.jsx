@@ -1,44 +1,19 @@
-import { ArrowUpRight } from 'lucide-react'
 import profile from '../assets/profile.png'
-
+import { P } from '../data/profile'
 export default function About() {
   return (
-    <section id="about" className="py-24 sm:py-32 border-t border-white/5">
-      <div className="mx-auto max-w-content px-6 grid lg:grid-cols-[0.85fr_1.15fr] gap-14 items-center">
-        <div className="relative mx-auto w-full max-w-xs lg:max-w-none order-2 lg:order-1">
-          <div className="rounded-[1.75rem] border border-white/10 overflow-hidden">
-            <img
-              src={profile}
-              alt="Mahir Foysal at work"
-              className="w-full aspect-[4/5] object-cover"
-            />
-          </div>
-        </div>
-
-        <div className="order-1 lg:order-2">
-          <h2 className="font-display text-balance text-4xl sm:text-5xl text-bone-100">
-            Designing visuals that make brands look better.
-          </h2>
-          <p className="mt-6 text-bone-300 leading-relaxed max-w-xl">
-            I'm Mahir Foysal, a Canva designer and social media visual designer.
-            I focus on creating clean, engaging and useful visual content for
-            businesses, creators and digital brands — the kind of posts,
-            templates and marketing visuals that make a page look considered
-            rather than thrown together.
+    <section id="about" className="py-24 border-t border-white/5">
+      <div className="mx-auto max-w-content px-6 grid md:grid-cols-[0.6fr_1.4fr] gap-12 items-center">
+        <img src={profile} alt={`Portrait of ${P.name}`} className="rounded-2xl border border-white/10 w-full max-w-xs aspect-[4/5] object-cover" />
+        <div>
+          <p className="font-mono text-xs text-brass-400">04 / ABOUT</p>
+          <h2 className="mt-3 font-display text-4xl text-bone-100">Hi, I'm {P.name}.</h2>
+          <p className="mt-5 text-bone-300 leading-relaxed max-w-xl">
+            I'm an AI developer who builds LLM-powered products end to end: retrieval pipelines, agents with tools, and the Node.js and Postgres backends behind them.
           </p>
           <p className="mt-4 text-bone-300 leading-relaxed max-w-xl">
-            My work sits at the intersection of design and social media: I
-            think about how a post performs on a feed, not just how it looks
-            on its own.
+            I'm based in {P.location} and looking for a full-time remote role where I can ship AI features with a product team. I write clear async updates and document what I build.
           </p>
-
-          <a
-            href="#contact"
-            className="mt-8 inline-flex items-center gap-2 rounded-full bg-brass-400 text-ink-900 px-7 py-3.5 text-sm font-medium hover:bg-brass-300 transition-colors"
-          >
-            Let's Create Something
-            <ArrowUpRight size={16} />
-          </a>
         </div>
       </div>
     </section>
